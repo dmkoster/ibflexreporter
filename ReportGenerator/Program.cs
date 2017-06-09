@@ -14,14 +14,21 @@ namespace ReportGenerator
         static void Main(string[] args)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(FlexQueryResponse));
-            StringReader reader = new StringReader(File.ReadAllText(@"FlexStatementService.xml"));
+            StringReader reader = new StringReader(File.ReadAllText(@"C:\Users\David\Source\Repos\ibflexreporter\FlexStatementService.xml"));
             FlexQueryResponse response = (FlexQueryResponse)serializer.Deserialize(reader);
 
-            // Parse Trades
-            foreach(FlexQueryResponseFlexStatementsFlexStatementTrade trade in response.FlexStatements.FlexStatement.Trades)
+            TradeTracker t = new TradeTracker(response.FlexStatements.FlexStatement.Trades);
+            foreach (string symbol in t.getSymbols())
             {
-                //trade.
+                Console.WriteLine(symbol + " " + t.getCommisionBySymbol(symbol));
             }
+            foreach (string symbol in t.getOptionSymbols())
+            {
+                Console.WriteLine("Option " + symbol + " " + t.getCommisionByOptionSymbol(symbol));
+            }
+
+            StockTradeLog log = new StockTradeLog(response.FlexStatements.FlexStatement.Trades);
+            Console.WriteLine(log.ToString());
         }
     }
 }
