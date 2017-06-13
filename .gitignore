@@ -241,3 +241,6 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/2016.xml
+/2017.xml
+/2015.xml

@@ -14,7 +14,7 @@ namespace ReportGenerator
         static void Main(string[] args)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(FlexQueryResponse));
-            StringReader reader = new StringReader(File.ReadAllText(@"C:\Users\David\Source\Repos\ibflexreporter\FlexStatementService.xml"));
+            StringReader reader = new StringReader(File.ReadAllText(@"C:\Users\David\Source\Repos\ibflexreporter\2017.xml"));
             FlexQueryResponse response = (FlexQueryResponse)serializer.Deserialize(reader);
 
             TradeTracker t = new TradeTracker(response.FlexStatements.FlexStatement.Trades);

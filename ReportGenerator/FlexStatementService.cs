@@ -7,14 +7,14 @@
 public partial class FlexQueryResponse
 {
 
-    private FlexQueryResponseFlexStatements flexStatementsField;
+    private Statements flexStatementsField;
 
     private string queryNameField;
 
     private string typeField;
 
     /// <remarks/>
-    public FlexQueryResponseFlexStatements FlexStatements
+    public Statements FlexStatements
     {
         get
         {
@@ -59,15 +59,15 @@ public partial class FlexQueryResponse
 [System.SerializableAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class FlexQueryResponseFlexStatements
+public partial class Statements
 {
 
-    private FlexQueryResponseFlexStatementsFlexStatement flexStatementField;
+    private Statement flexStatementField;
 
-    private byte countField;
+    private decimal countField;
 
     /// <remarks/>
-    public FlexQueryResponseFlexStatementsFlexStatement FlexStatement
+    public Statement FlexStatement
     {
         get
         {
@@ -81,7 +81,7 @@ public partial class FlexQueryResponseFlexStatements
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte count
+    public decimal count
     {
         get
         {
@@ -98,14 +98,14 @@ public partial class FlexQueryResponseFlexStatements
 [System.SerializableAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class FlexQueryResponseFlexStatementsFlexStatement
+public partial class Statement
 {
 
-    private FlexQueryResponseFlexStatementsFlexStatementAccountInformation accountInformationField;
+    private AccountInformation accountInformationField;
 
-    private FlexQueryResponseFlexStatementsFlexStatementEquitySummaryByReportDateInBase[] equitySummaryInBaseField;
+    private EquitySummaryByReportDateInBase[] equitySummaryInBaseField;
 
-    private FlexQueryResponseFlexStatementsFlexStatementChangeInNAV changeInNAVField;
+    private ChangeInNAV changeInNAVField;
 
     private object fIFOPerformanceSummaryInBaseField;
 
@@ -117,9 +117,9 @@ public partial class FlexQueryResponseFlexStatementsFlexStatement
 
     private object fdicInsuredDepositsByBankField;
 
-    private FlexQueryResponseFlexStatementsFlexStatementStatementOfFundsLine[] stmtFundsField;
+    private StatementOfFundsLine[] stmtFundsField;
 
-    private FlexQueryResponseFlexStatementsFlexStatementChangeInPositionValue[] changeInPositionValuesField;
+    private ChangeInPositionValue[] changeInPositionValuesField;
 
     private object openPositionsField;
 
@@ -129,11 +129,11 @@ public partial class FlexQueryResponseFlexStatementsFlexStatement
 
     private object fxPositionsField;
 
-    private FlexQueryResponseFlexStatementsFlexStatementTrade[] tradesField;
+    private Trade[] tradesField;
 
     private object transactionTaxesField;
 
-    private FlexQueryResponseFlexStatementsFlexStatementOptionEAE[] optionEAEField;
+    private OptionEAE[] optionEAEField;
 
     private object pendingExcercisesField;
 
@@ -147,19 +147,19 @@ public partial class FlexQueryResponseFlexStatementsFlexStatement
 
     private object routingCommissionsField;
 
-    private FlexQueryResponseFlexStatementsFlexStatementUnbundledCommissionDetail[] unbundledCommissionDetailsField;
+    private UnbundledCommissionDetail[] unbundledCommissionDetailsField;
 
-    private FlexQueryResponseFlexStatementsFlexStatementPriorPeriodPosition[] priorPeriodPositionsField;
+    private PriorPeriodPosition[] priorPeriodPositionsField;
 
     private object iBGNoteTransactionsField;
 
     private object corporateActionsField;
 
-    private FlexQueryResponseFlexStatementsFlexStatementCashTransaction[] cashTransactionsField;
+    private CashTransaction[] cashTransactionsField;
 
     private object cFDChargesField;
 
-    private FlexQueryResponseFlexStatementsFlexStatementInterestAccruals interestAccrualsField;
+    private InterestAccruals interestAccrualsField;
 
     private object sLBOpenContractsField;
 
@@ -169,11 +169,11 @@ public partial class FlexQueryResponseFlexStatementsFlexStatement
 
     private object transfersField;
 
-    private FlexQueryResponseFlexStatementsFlexStatementChangeInDividendAccrual[] changeInDividendAccrualsField;
+    private ChangeInDividendAccrual[] changeInDividendAccrualsField;
 
-    private FlexQueryResponseFlexStatementsFlexStatementOpenDividendAccrual[] openDividendAccrualsField;
+    private OpenDividendAccrual[] openDividendAccrualsField;
 
-    private FlexQueryResponseFlexStatementsFlexStatementSecurityInfo[] securitiesInfoField;
+    private SecurityInfo[] securitiesInfoField;
 
     private string accountIdField;
 
@@ -186,7 +186,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatement
     private string whenGeneratedField;
 
     /// <remarks/>
-    public FlexQueryResponseFlexStatementsFlexStatementAccountInformation AccountInformation
+    public AccountInformation AccountInformation
     {
         get
         {
@@ -200,7 +200,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatement
 
     /// <remarks/>
     [System.Xml.Serialization.XmlArrayItemAttribute("EquitySummaryByReportDateInBase", IsNullable = false)]
-    public FlexQueryResponseFlexStatementsFlexStatementEquitySummaryByReportDateInBase[] EquitySummaryInBase
+    public EquitySummaryByReportDateInBase[] EquitySummaryInBase
     {
         get
         {
@@ -213,7 +213,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatement
     }
 
     /// <remarks/>
-    public FlexQueryResponseFlexStatementsFlexStatementChangeInNAV ChangeInNAV
+    public ChangeInNAV ChangeInNAV
     {
         get
         {
@@ -293,7 +293,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatement
 
     /// <remarks/>
     [System.Xml.Serialization.XmlArrayItemAttribute("StatementOfFundsLine", IsNullable = false)]
-    public FlexQueryResponseFlexStatementsFlexStatementStatementOfFundsLine[] StmtFunds
+    public StatementOfFundsLine[] StmtFunds
     {
         get
         {
@@ -307,7 +307,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatement
 
     /// <remarks/>
     [System.Xml.Serialization.XmlArrayItemAttribute("ChangeInPositionValue", IsNullable = false)]
-    public FlexQueryResponseFlexStatementsFlexStatementChangeInPositionValue[] ChangeInPositionValues
+    public ChangeInPositionValue[] ChangeInPositionValues
     {
         get
         {
@@ -373,7 +373,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatement
 
     /// <remarks/>
     [System.Xml.Serialization.XmlArrayItemAttribute("Trade", IsNullable = false)]
-    public FlexQueryResponseFlexStatementsFlexStatementTrade[] Trades
+    public Trade[] Trades
     {
         get
         {
@@ -400,7 +400,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatement
 
     /// <remarks/>
     [System.Xml.Serialization.XmlArrayItemAttribute("OptionEAE", IsNullable = false)]
-    public FlexQueryResponseFlexStatementsFlexStatementOptionEAE[] OptionEAE
+    public OptionEAE[] OptionEAE
     {
         get
         {
@@ -492,7 +492,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatement
 
     /// <remarks/>
     [System.Xml.Serialization.XmlArrayItemAttribute("UnbundledCommissionDetail", IsNullable = false)]
-    public FlexQueryResponseFlexStatementsFlexStatementUnbundledCommissionDetail[] UnbundledCommissionDetails
+    public UnbundledCommissionDetail[] UnbundledCommissionDetails
     {
         get
         {
@@ -506,7 +506,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatement
 
     /// <remarks/>
     [System.Xml.Serialization.XmlArrayItemAttribute("PriorPeriodPosition", IsNullable = false)]
-    public FlexQueryResponseFlexStatementsFlexStatementPriorPeriodPosition[] PriorPeriodPositions
+    public PriorPeriodPosition[] PriorPeriodPositions
     {
         get
         {
@@ -546,7 +546,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatement
 
     /// <remarks/>
     [System.Xml.Serialization.XmlArrayItemAttribute("CashTransaction", IsNullable = false)]
-    public FlexQueryResponseFlexStatementsFlexStatementCashTransaction[] CashTransactions
+    public CashTransaction[] CashTransactions
     {
         get
         {
@@ -572,7 +572,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatement
     }
 
     /// <remarks/>
-    public FlexQueryResponseFlexStatementsFlexStatementInterestAccruals InterestAccruals
+    public InterestAccruals InterestAccruals
     {
         get
         {
@@ -638,7 +638,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatement
 
     /// <remarks/>
     [System.Xml.Serialization.XmlArrayItemAttribute("ChangeInDividendAccrual", IsNullable = false)]
-    public FlexQueryResponseFlexStatementsFlexStatementChangeInDividendAccrual[] ChangeInDividendAccruals
+    public ChangeInDividendAccrual[] ChangeInDividendAccruals
     {
         get
         {
@@ -652,7 +652,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatement
 
     /// <remarks/>
     [System.Xml.Serialization.XmlArrayItemAttribute("OpenDividendAccrual", IsNullable = false)]
-    public FlexQueryResponseFlexStatementsFlexStatementOpenDividendAccrual[] OpenDividendAccruals
+    public OpenDividendAccrual[] OpenDividendAccruals
     {
         get
         {
@@ -666,7 +666,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatement
 
     /// <remarks/>
     [System.Xml.Serialization.XmlArrayItemAttribute("SecurityInfo", IsNullable = false)]
-    public FlexQueryResponseFlexStatementsFlexStatementSecurityInfo[] SecuritiesInfo
+    public SecurityInfo[] SecuritiesInfo
     {
         get
         {
@@ -753,7 +753,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatement
 [System.SerializableAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class FlexQueryResponseFlexStatementsFlexStatementAccountInformation
+public partial class AccountInformation
 {
 
     private string accountIdField;
@@ -794,7 +794,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementAccountInformat
 
     private string countryField;
 
-    private ushort postalCodeField;
+    private decimal postalCodeField;
 
     private string streetResidentialAddressField;
 
@@ -806,7 +806,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementAccountInformat
 
     private string countryResidentialAddressField;
 
-    private ushort postalCodeResidentialAddressField;
+    private decimal postalCodeResidentialAddressField;
 
     private string masterNameField;
 
@@ -1082,7 +1082,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementAccountInformat
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public ushort postalCode
+    public decimal postalCode
     {
         get
         {
@@ -1166,7 +1166,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementAccountInformat
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public ushort postalCodeResidentialAddress
+    public decimal postalCodeResidentialAddress
     {
         get
         {
@@ -1225,7 +1225,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementAccountInformat
 [System.SerializableAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryByReportDateInBase
+public partial class EquitySummaryByReportDateInBase
 {
 
     private string accountIdField;
@@ -1240,97 +1240,97 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     private decimal cashLongField;
 
-    private byte cashShortField;
+    private decimal cashShortField;
 
-    private byte slbCashCollateralField;
+    private decimal slbCashCollateralField;
 
-    private byte slbCashCollateralLongField;
+    private decimal slbCashCollateralLongField;
 
-    private byte slbCashCollateralShortField;
+    private decimal slbCashCollateralShortField;
 
     private decimal stockField;
 
     private decimal stockLongField;
 
-    private byte stockShortField;
+    private decimal stockShortField;
 
-    private byte slbDirectSecuritiesBorrowedField;
+    private decimal slbDirectSecuritiesBorrowedField;
 
-    private byte slbDirectSecuritiesBorrowedLongField;
+    private decimal slbDirectSecuritiesBorrowedLongField;
 
-    private byte slbDirectSecuritiesBorrowedShortField;
+    private decimal slbDirectSecuritiesBorrowedShortField;
 
-    private byte slbDirectSecuritiesLentField;
+    private decimal slbDirectSecuritiesLentField;
 
-    private byte slbDirectSecuritiesLentLongField;
+    private decimal slbDirectSecuritiesLentLongField;
 
-    private byte slbDirectSecuritiesLentShortField;
+    private decimal slbDirectSecuritiesLentShortField;
 
     private decimal optionsField;
 
-    private byte optionsLongField;
+    private decimal optionsLongField;
 
     private decimal optionsShortField;
 
-    private byte commoditiesField;
+    private decimal commoditiesField;
 
-    private byte commoditiesLongField;
+    private decimal commoditiesLongField;
 
-    private byte commoditiesShortField;
+    private decimal commoditiesShortField;
 
-    private byte bondsField;
+    private decimal bondsField;
 
-    private byte bondsLongField;
+    private decimal bondsLongField;
 
-    private byte bondsShortField;
+    private decimal bondsShortField;
 
-    private byte notesField;
+    private decimal notesField;
 
-    private byte notesLongField;
+    private decimal notesLongField;
 
-    private byte notesShortField;
+    private decimal notesShortField;
 
-    private byte fundsField;
+    private decimal fundsField;
 
-    private byte fundsLongField;
+    private decimal fundsLongField;
 
-    private byte fundsShortField;
+    private decimal fundsShortField;
 
     private decimal interestAccrualsField;
 
-    private byte interestAccrualsLongField;
+    private decimal interestAccrualsLongField;
 
     private decimal interestAccrualsShortField;
 
-    private byte softDollarsField;
+    private decimal softDollarsField;
 
-    private byte softDollarsLongField;
+    private decimal softDollarsLongField;
 
-    private byte softDollarsShortField;
+    private decimal softDollarsShortField;
 
-    private byte forexCfdUnrealizedPlField;
+    private decimal forexCfdUnrealizedPlField;
 
-    private byte forexCfdUnrealizedPlLongField;
+    private decimal forexCfdUnrealizedPlLongField;
 
-    private byte forexCfdUnrealizedPlShortField;
+    private decimal forexCfdUnrealizedPlShortField;
 
     private decimal dividendAccrualsField;
 
     private decimal dividendAccrualsLongField;
 
-    private byte dividendAccrualsShortField;
+    private decimal dividendAccrualsShortField;
 
-    private byte fdicInsuredBankSweepAccountField;
+    private decimal fdicInsuredBankSweepAccountField;
 
-    private byte fdicInsuredBankSweepAccountLongField;
+    private decimal fdicInsuredBankSweepAccountLongField;
 
-    private byte fdicInsuredBankSweepAccountShortField;
+    private decimal fdicInsuredBankSweepAccountShortField;
 
-    private byte fdicInsuredAccountInterestAccrualsField;
+    private decimal fdicInsuredAccountInterestAccrualsField;
 
-    private byte fdicInsuredAccountInterestAccrualsLongField;
+    private decimal fdicInsuredAccountInterestAccrualsLongField;
 
-    private byte fdicInsuredAccountInterestAccrualsShortField;
+    private decimal fdicInsuredAccountInterestAccrualsShortField;
 
     private decimal totalField;
 
@@ -1424,7 +1424,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte cashShort
+    public decimal cashShort
     {
         get
         {
@@ -1438,7 +1438,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte slbCashCollateral
+    public decimal slbCashCollateral
     {
         get
         {
@@ -1452,7 +1452,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte slbCashCollateralLong
+    public decimal slbCashCollateralLong
     {
         get
         {
@@ -1466,7 +1466,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte slbCashCollateralShort
+    public decimal slbCashCollateralShort
     {
         get
         {
@@ -1508,7 +1508,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte stockShort
+    public decimal stockShort
     {
         get
         {
@@ -1522,7 +1522,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte slbDirectSecuritiesBorrowed
+    public decimal slbDirectSecuritiesBorrowed
     {
         get
         {
@@ -1536,7 +1536,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte slbDirectSecuritiesBorrowedLong
+    public decimal slbDirectSecuritiesBorrowedLong
     {
         get
         {
@@ -1550,7 +1550,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte slbDirectSecuritiesBorrowedShort
+    public decimal slbDirectSecuritiesBorrowedShort
     {
         get
         {
@@ -1564,7 +1564,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte slbDirectSecuritiesLent
+    public decimal slbDirectSecuritiesLent
     {
         get
         {
@@ -1578,7 +1578,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte slbDirectSecuritiesLentLong
+    public decimal slbDirectSecuritiesLentLong
     {
         get
         {
@@ -1592,7 +1592,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte slbDirectSecuritiesLentShort
+    public decimal slbDirectSecuritiesLentShort
     {
         get
         {
@@ -1620,7 +1620,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte optionsLong
+    public decimal optionsLong
     {
         get
         {
@@ -1648,7 +1648,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte commodities
+    public decimal commodities
     {
         get
         {
@@ -1662,7 +1662,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte commoditiesLong
+    public decimal commoditiesLong
     {
         get
         {
@@ -1676,7 +1676,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte commoditiesShort
+    public decimal commoditiesShort
     {
         get
         {
@@ -1690,7 +1690,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte bonds
+    public decimal bonds
     {
         get
         {
@@ -1704,7 +1704,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte bondsLong
+    public decimal bondsLong
     {
         get
         {
@@ -1718,7 +1718,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte bondsShort
+    public decimal bondsShort
     {
         get
         {
@@ -1732,7 +1732,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte notes
+    public decimal notes
     {
         get
         {
@@ -1746,7 +1746,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte notesLong
+    public decimal notesLong
     {
         get
         {
@@ -1760,7 +1760,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte notesShort
+    public decimal notesShort
     {
         get
         {
@@ -1774,7 +1774,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte funds
+    public decimal funds
     {
         get
         {
@@ -1788,7 +1788,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte fundsLong
+    public decimal fundsLong
     {
         get
         {
@@ -1802,7 +1802,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte fundsShort
+    public decimal fundsShort
     {
         get
         {
@@ -1830,7 +1830,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte interestAccrualsLong
+    public decimal interestAccrualsLong
     {
         get
         {
@@ -1858,7 +1858,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte softDollars
+    public decimal softDollars
     {
         get
         {
@@ -1872,7 +1872,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte softDollarsLong
+    public decimal softDollarsLong
     {
         get
         {
@@ -1886,7 +1886,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte softDollarsShort
+    public decimal softDollarsShort
     {
         get
         {
@@ -1900,7 +1900,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte forexCfdUnrealizedPl
+    public decimal forexCfdUnrealizedPl
     {
         get
         {
@@ -1914,7 +1914,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte forexCfdUnrealizedPlLong
+    public decimal forexCfdUnrealizedPlLong
     {
         get
         {
@@ -1928,7 +1928,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte forexCfdUnrealizedPlShort
+    public decimal forexCfdUnrealizedPlShort
     {
         get
         {
@@ -1970,7 +1970,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte dividendAccrualsShort
+    public decimal dividendAccrualsShort
     {
         get
         {
@@ -1984,7 +1984,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte fdicInsuredBankSweepAccount
+    public decimal fdicInsuredBankSweepAccount
     {
         get
         {
@@ -1998,7 +1998,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte fdicInsuredBankSweepAccountLong
+    public decimal fdicInsuredBankSweepAccountLong
     {
         get
         {
@@ -2012,7 +2012,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte fdicInsuredBankSweepAccountShort
+    public decimal fdicInsuredBankSweepAccountShort
     {
         get
         {
@@ -2026,7 +2026,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte fdicInsuredAccountInterestAccruals
+    public decimal fdicInsuredAccountInterestAccruals
     {
         get
         {
@@ -2040,7 +2040,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte fdicInsuredAccountInterestAccrualsLong
+    public decimal fdicInsuredAccountInterestAccrualsLong
     {
         get
         {
@@ -2054,7 +2054,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte fdicInsuredAccountInterestAccrualsShort
+    public decimal fdicInsuredAccountInterestAccrualsShort
     {
         get
         {
@@ -2113,7 +2113,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementEquitySummaryBy
 [System.SerializableAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInNAV
+public partial class ChangeInNAV
 {
 
     private string accountIdField;
@@ -2130,27 +2130,27 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInNAV
 
     private decimal mtmField;
 
-    private byte realizedField;
+    private decimal realizedField;
 
-    private byte changeInUnrealizedField;
+    private decimal changeInUnrealizedField;
 
-    private byte costAdjustmentsField;
+    private decimal costAdjustmentsField;
 
-    private byte transferredPnlAdjustmentsField;
+    private decimal transferredPnlAdjustmentsField;
 
-    private ushort depositsWithdrawalsField;
+    private decimal depositsWithdrawalsField;
 
-    private byte internalCashTransfersField;
+    private decimal internalCashTransfersField;
 
-    private byte assetTransfersField;
+    private decimal assetTransfersField;
 
     private decimal dividendsField;
 
     private decimal withholdingTaxField;
 
-    private byte withholding871mField;
+    private decimal withholding871mField;
 
-    private byte withholdingTaxCollectedField;
+    private decimal withholdingTaxCollectedField;
 
     private decimal changeInDividendAccrualsField;
 
@@ -2158,35 +2158,35 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInNAV
 
     private decimal changeInInterestAccrualsField;
 
-    private byte advisorFeesField;
+    private decimal advisorFeesField;
 
-    private byte clientFeesField;
+    private decimal clientFeesField;
 
     private decimal otherFeesField;
 
-    private byte feesReceivablesField;
+    private decimal feesReceivablesField;
 
     private decimal commissionsField;
 
-    private byte commissionReceivablesField;
+    private decimal commissionReceivablesField;
 
-    private byte forexCommissionsField;
+    private decimal forexCommissionsField;
 
-    private byte transactionTaxField;
+    private decimal transactionTaxField;
 
-    private byte taxReceivablesField;
+    private decimal taxReceivablesField;
 
-    private byte salesTaxField;
+    private decimal salesTaxField;
 
-    private byte softDollarsField;
+    private decimal softDollarsField;
 
-    private byte netFxTradingField;
+    private decimal netFxTradingField;
 
-    private byte fxTranslationField;
+    private decimal fxTranslationField;
 
-    private byte linkingAdjustmentsField;
+    private decimal linkingAdjustmentsField;
 
-    private byte otherField;
+    private decimal otherField;
 
     private decimal endingValueField;
 
@@ -2292,7 +2292,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInNAV
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte realized
+    public decimal realized
     {
         get
         {
@@ -2306,7 +2306,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInNAV
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte changeInUnrealized
+    public decimal changeInUnrealized
     {
         get
         {
@@ -2320,7 +2320,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInNAV
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte costAdjustments
+    public decimal costAdjustments
     {
         get
         {
@@ -2334,7 +2334,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInNAV
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte transferredPnlAdjustments
+    public decimal transferredPnlAdjustments
     {
         get
         {
@@ -2348,7 +2348,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInNAV
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public ushort depositsWithdrawals
+    public decimal depositsWithdrawals
     {
         get
         {
@@ -2362,7 +2362,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInNAV
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte internalCashTransfers
+    public decimal internalCashTransfers
     {
         get
         {
@@ -2376,7 +2376,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInNAV
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte assetTransfers
+    public decimal assetTransfers
     {
         get
         {
@@ -2418,7 +2418,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInNAV
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte withholding871m
+    public decimal withholding871m
     {
         get
         {
@@ -2432,7 +2432,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInNAV
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte withholdingTaxCollected
+    public decimal withholdingTaxCollected
     {
         get
         {
@@ -2488,7 +2488,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInNAV
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte advisorFees
+    public decimal advisorFees
     {
         get
         {
@@ -2502,7 +2502,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInNAV
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte clientFees
+    public decimal clientFees
     {
         get
         {
@@ -2530,7 +2530,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInNAV
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte feesReceivables
+    public decimal feesReceivables
     {
         get
         {
@@ -2558,7 +2558,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInNAV
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte commissionReceivables
+    public decimal commissionReceivables
     {
         get
         {
@@ -2572,7 +2572,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInNAV
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte forexCommissions
+    public decimal forexCommissions
     {
         get
         {
@@ -2586,7 +2586,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInNAV
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte transactionTax
+    public decimal transactionTax
     {
         get
         {
@@ -2600,7 +2600,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInNAV
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte taxReceivables
+    public decimal taxReceivables
     {
         get
         {
@@ -2614,7 +2614,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInNAV
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte salesTax
+    public decimal salesTax
     {
         get
         {
@@ -2628,7 +2628,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInNAV
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte softDollars
+    public decimal softDollars
     {
         get
         {
@@ -2642,7 +2642,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInNAV
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte netFxTrading
+    public decimal netFxTrading
     {
         get
         {
@@ -2656,7 +2656,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInNAV
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte fxTranslation
+    public decimal fxTranslation
     {
         get
         {
@@ -2670,7 +2670,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInNAV
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte linkingAdjustments
+    public decimal linkingAdjustments
     {
         get
         {
@@ -2684,7 +2684,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInNAV
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte other
+    public decimal other
     {
         get
         {
@@ -3220,10 +3220,10 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementMTMPerformanceS
 public partial class FlexQueryResponseFlexStatementsFlexStatementCashReport
 {
 
-    private FlexQueryResponseFlexStatementsFlexStatementCashReportCashReportCurrency cashReportCurrencyField;
+    private CashReportCurrency cashReportCurrencyField;
 
     /// <remarks/>
-    public FlexQueryResponseFlexStatementsFlexStatementCashReportCashReportCurrency CashReportCurrency
+    public CashReportCurrency CashReportCurrency
     {
         get
         {
@@ -3240,7 +3240,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReport
 [System.SerializableAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashReportCurrency
+public partial class CashReportCurrency
 {
 
     private string accountIdField;
@@ -3259,199 +3259,199 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     private decimal startingCashSecField;
 
-    private byte startingCashComField;
+    private decimal startingCashComField;
 
-    private byte clientFeesField;
+    private decimal clientFeesField;
 
-    private byte clientFeesSecField;
+    private decimal clientFeesSecField;
 
-    private byte clientFeesComField;
+    private decimal clientFeesComField;
 
     private decimal commissionsField;
 
     private decimal commissionsSecField;
 
-    private byte commissionsComField;
+    private decimal commissionsComField;
 
-    private byte billableCommissionsField;
+    private decimal billableCommissionsField;
 
-    private byte billableCommissionsSecField;
+    private decimal billableCommissionsSecField;
 
-    private byte billableCommissionsComField;
+    private decimal billableCommissionsComField;
 
-    private ushort depositWithdrawalsField;
+    private decimal depositWithdrawalsField;
 
-    private ushort depositWithdrawalsSecField;
+    private decimal depositWithdrawalsSecField;
 
-    private byte depositWithdrawalsComField;
+    private decimal depositWithdrawalsComField;
 
-    private ushort depositsField;
+    private decimal depositsField;
 
-    private ushort depositsSecField;
+    private decimal depositsSecField;
 
-    private byte depositsComField;
+    private decimal depositsComField;
 
-    private byte withdrawalsField;
+    private decimal withdrawalsField;
 
-    private byte withdrawalsSecField;
+    private decimal withdrawalsSecField;
 
-    private byte withdrawalsComField;
+    private decimal withdrawalsComField;
 
-    private byte accountTransfersField;
+    private decimal accountTransfersField;
 
-    private byte accountTransfersSecField;
+    private decimal accountTransfersSecField;
 
-    private byte accountTransfersComField;
+    private decimal accountTransfersComField;
 
-    private byte linkingAdjustmentsField;
+    private decimal linkingAdjustmentsField;
 
-    private byte linkingAdjustmentsSecField;
+    private decimal linkingAdjustmentsSecField;
 
-    private byte linkingAdjustmentsComField;
+    private decimal linkingAdjustmentsComField;
 
-    private byte internalTransfersField;
+    private decimal internalTransfersField;
 
-    private byte internalTransfersSecField;
+    private decimal internalTransfersSecField;
 
-    private byte internalTransfersComField;
+    private decimal internalTransfersComField;
 
     private decimal dividendsField;
 
     private decimal dividendsSecField;
 
-    private byte dividendsComField;
+    private decimal dividendsComField;
 
-    private byte insuredDepositInterestField;
+    private decimal insuredDepositInterestField;
 
-    private byte insuredDepositInterestSecField;
+    private decimal insuredDepositInterestSecField;
 
-    private byte insuredDepositInterestComField;
+    private decimal insuredDepositInterestComField;
 
     private decimal brokerInterestField;
 
     private decimal brokerInterestSecField;
 
-    private byte brokerInterestComField;
+    private decimal brokerInterestComField;
 
-    private byte bondInterestField;
+    private decimal bondInterestField;
 
-    private byte bondInterestSecField;
+    private decimal bondInterestSecField;
 
-    private byte bondInterestComField;
+    private decimal bondInterestComField;
 
-    private byte cashSettlingMtmField;
+    private decimal cashSettlingMtmField;
 
-    private byte cashSettlingMtmSecField;
+    private decimal cashSettlingMtmSecField;
 
-    private byte cashSettlingMtmComField;
+    private decimal cashSettlingMtmComField;
 
-    private byte realizedVmField;
+    private decimal realizedVmField;
 
-    private byte realizedVmSecField;
+    private decimal realizedVmSecField;
 
-    private byte realizedVmComField;
+    private decimal realizedVmComField;
 
-    private byte cfdChargesField;
+    private decimal cfdChargesField;
 
-    private byte cfdChargesSecField;
+    private decimal cfdChargesSecField;
 
-    private byte cfdChargesComField;
+    private decimal cfdChargesComField;
 
-    private ushort netTradesSalesField;
+    private decimal netTradesSalesField;
 
-    private ushort netTradesSalesSecField;
+    private decimal netTradesSalesSecField;
 
-    private byte netTradesSalesComField;
+    private decimal netTradesSalesComField;
 
     private decimal netTradesPurchasesField;
 
     private decimal netTradesPurchasesSecField;
 
-    private byte netTradesPurchasesComField;
+    private decimal netTradesPurchasesComField;
 
-    private byte advisorFeesField;
+    private decimal advisorFeesField;
 
-    private byte advisorFeesSecField;
+    private decimal advisorFeesSecField;
 
-    private byte advisorFeesComField;
+    private decimal advisorFeesComField;
 
-    private byte feesReceivablesField;
+    private decimal feesReceivablesField;
 
-    private byte feesReceivablesSecField;
+    private decimal feesReceivablesSecField;
 
-    private byte feesReceivablesComField;
+    private decimal feesReceivablesComField;
 
     private decimal paymentInLieuField;
 
     private decimal paymentInLieuSecField;
 
-    private byte paymentInLieuComField;
+    private decimal paymentInLieuComField;
 
-    private byte transactionTaxField;
+    private decimal transactionTaxField;
 
-    private byte transactionTaxSecField;
+    private decimal transactionTaxSecField;
 
-    private byte transactionTaxComField;
+    private decimal transactionTaxComField;
 
-    private byte taxReceivablesField;
+    private decimal taxReceivablesField;
 
-    private byte taxReceivablesSecField;
+    private decimal taxReceivablesSecField;
 
-    private byte taxReceivablesComField;
+    private decimal taxReceivablesComField;
 
     private decimal withholdingTaxField;
 
     private decimal withholdingTaxSecField;
 
-    private byte withholdingTaxComField;
+    private decimal withholdingTaxComField;
 
-    private byte withholding871mField;
+    private decimal withholding871mField;
 
-    private byte withholding871mSecField;
+    private decimal withholding871mSecField;
 
-    private byte withholding871mComField;
+    private decimal withholding871mComField;
 
-    private byte withholdingCollectedTaxField;
+    private decimal withholdingCollectedTaxField;
 
-    private byte withholdingCollectedTaxSecField;
+    private decimal withholdingCollectedTaxSecField;
 
-    private byte withholdingCollectedTaxComField;
+    private decimal withholdingCollectedTaxComField;
 
-    private byte salesTaxField;
+    private decimal salesTaxField;
 
-    private byte salesTaxSecField;
+    private decimal salesTaxSecField;
 
-    private byte salesTaxComField;
+    private decimal salesTaxComField;
 
-    private byte fxTranslationGainLossField;
+    private decimal fxTranslationGainLossField;
 
-    private byte fxTranslationGainLossSecField;
+    private decimal fxTranslationGainLossSecField;
 
-    private byte fxTranslationGainLossComField;
+    private decimal fxTranslationGainLossComField;
 
     private decimal otherFeesField;
 
     private decimal otherFeesSecField;
 
-    private byte otherFeesComField;
+    private decimal otherFeesComField;
 
-    private byte otherField;
+    private decimal otherField;
 
-    private byte otherSecField;
+    private decimal otherSecField;
 
-    private byte otherComField;
+    private decimal otherComField;
 
     private decimal endingCashField;
 
     private decimal endingCashSecField;
 
-    private byte endingCashComField;
+    private decimal endingCashComField;
 
     private decimal endingSettledCashField;
 
     private decimal endingSettledCashSecField;
 
-    private byte endingSettledCashComField;
+    private decimal endingSettledCashComField;
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
@@ -3567,7 +3567,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte startingCashCom
+    public decimal startingCashCom
     {
         get
         {
@@ -3581,7 +3581,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte clientFees
+    public decimal clientFees
     {
         get
         {
@@ -3595,7 +3595,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte clientFeesSec
+    public decimal clientFeesSec
     {
         get
         {
@@ -3609,7 +3609,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte clientFeesCom
+    public decimal clientFeesCom
     {
         get
         {
@@ -3651,7 +3651,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte commissionsCom
+    public decimal commissionsCom
     {
         get
         {
@@ -3665,7 +3665,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte billableCommissions
+    public decimal billableCommissions
     {
         get
         {
@@ -3679,7 +3679,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte billableCommissionsSec
+    public decimal billableCommissionsSec
     {
         get
         {
@@ -3693,7 +3693,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte billableCommissionsCom
+    public decimal billableCommissionsCom
     {
         get
         {
@@ -3707,7 +3707,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public ushort depositWithdrawals
+    public decimal depositWithdrawals
     {
         get
         {
@@ -3721,7 +3721,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public ushort depositWithdrawalsSec
+    public decimal depositWithdrawalsSec
     {
         get
         {
@@ -3735,7 +3735,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte depositWithdrawalsCom
+    public decimal depositWithdrawalsCom
     {
         get
         {
@@ -3749,7 +3749,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public ushort deposits
+    public decimal deposits
     {
         get
         {
@@ -3763,7 +3763,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public ushort depositsSec
+    public decimal depositsSec
     {
         get
         {
@@ -3777,7 +3777,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte depositsCom
+    public decimal depositsCom
     {
         get
         {
@@ -3791,7 +3791,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte withdrawals
+    public decimal withdrawals
     {
         get
         {
@@ -3805,7 +3805,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte withdrawalsSec
+    public decimal withdrawalsSec
     {
         get
         {
@@ -3819,7 +3819,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte withdrawalsCom
+    public decimal withdrawalsCom
     {
         get
         {
@@ -3833,7 +3833,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte accountTransfers
+    public decimal accountTransfers
     {
         get
         {
@@ -3847,7 +3847,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte accountTransfersSec
+    public decimal accountTransfersSec
     {
         get
         {
@@ -3861,7 +3861,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte accountTransfersCom
+    public decimal accountTransfersCom
     {
         get
         {
@@ -3875,7 +3875,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte linkingAdjustments
+    public decimal linkingAdjustments
     {
         get
         {
@@ -3889,7 +3889,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte linkingAdjustmentsSec
+    public decimal linkingAdjustmentsSec
     {
         get
         {
@@ -3903,7 +3903,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte linkingAdjustmentsCom
+    public decimal linkingAdjustmentsCom
     {
         get
         {
@@ -3917,7 +3917,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte internalTransfers
+    public decimal internalTransfers
     {
         get
         {
@@ -3931,7 +3931,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte internalTransfersSec
+    public decimal internalTransfersSec
     {
         get
         {
@@ -3945,7 +3945,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte internalTransfersCom
+    public decimal internalTransfersCom
     {
         get
         {
@@ -3987,7 +3987,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte dividendsCom
+    public decimal dividendsCom
     {
         get
         {
@@ -4001,7 +4001,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte insuredDepositInterest
+    public decimal insuredDepositInterest
     {
         get
         {
@@ -4015,7 +4015,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte insuredDepositInterestSec
+    public decimal insuredDepositInterestSec
     {
         get
         {
@@ -4029,7 +4029,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte insuredDepositInterestCom
+    public decimal insuredDepositInterestCom
     {
         get
         {
@@ -4071,7 +4071,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte brokerInterestCom
+    public decimal brokerInterestCom
     {
         get
         {
@@ -4085,7 +4085,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte bondInterest
+    public decimal bondInterest
     {
         get
         {
@@ -4099,7 +4099,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte bondInterestSec
+    public decimal bondInterestSec
     {
         get
         {
@@ -4113,7 +4113,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte bondInterestCom
+    public decimal bondInterestCom
     {
         get
         {
@@ -4127,7 +4127,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte cashSettlingMtm
+    public decimal cashSettlingMtm
     {
         get
         {
@@ -4141,7 +4141,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte cashSettlingMtmSec
+    public decimal cashSettlingMtmSec
     {
         get
         {
@@ -4155,7 +4155,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte cashSettlingMtmCom
+    public decimal cashSettlingMtmCom
     {
         get
         {
@@ -4169,7 +4169,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte realizedVm
+    public decimal realizedVm
     {
         get
         {
@@ -4183,7 +4183,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte realizedVmSec
+    public decimal realizedVmSec
     {
         get
         {
@@ -4197,7 +4197,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte realizedVmCom
+    public decimal realizedVmCom
     {
         get
         {
@@ -4211,7 +4211,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte cfdCharges
+    public decimal cfdCharges
     {
         get
         {
@@ -4225,7 +4225,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte cfdChargesSec
+    public decimal cfdChargesSec
     {
         get
         {
@@ -4239,7 +4239,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte cfdChargesCom
+    public decimal cfdChargesCom
     {
         get
         {
@@ -4253,7 +4253,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public ushort netTradesSales
+    public decimal netTradesSales
     {
         get
         {
@@ -4267,7 +4267,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public ushort netTradesSalesSec
+    public decimal netTradesSalesSec
     {
         get
         {
@@ -4281,7 +4281,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte netTradesSalesCom
+    public decimal netTradesSalesCom
     {
         get
         {
@@ -4323,7 +4323,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte netTradesPurchasesCom
+    public decimal netTradesPurchasesCom
     {
         get
         {
@@ -4337,7 +4337,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte advisorFees
+    public decimal advisorFees
     {
         get
         {
@@ -4351,7 +4351,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte advisorFeesSec
+    public decimal advisorFeesSec
     {
         get
         {
@@ -4365,7 +4365,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte advisorFeesCom
+    public decimal advisorFeesCom
     {
         get
         {
@@ -4379,7 +4379,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte feesReceivables
+    public decimal feesReceivables
     {
         get
         {
@@ -4393,7 +4393,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte feesReceivablesSec
+    public decimal feesReceivablesSec
     {
         get
         {
@@ -4407,7 +4407,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte feesReceivablesCom
+    public decimal feesReceivablesCom
     {
         get
         {
@@ -4449,7 +4449,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte paymentInLieuCom
+    public decimal paymentInLieuCom
     {
         get
         {
@@ -4463,7 +4463,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte transactionTax
+    public decimal transactionTax
     {
         get
         {
@@ -4477,7 +4477,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte transactionTaxSec
+    public decimal transactionTaxSec
     {
         get
         {
@@ -4491,7 +4491,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte transactionTaxCom
+    public decimal transactionTaxCom
     {
         get
         {
@@ -4505,7 +4505,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte taxReceivables
+    public decimal taxReceivables
     {
         get
         {
@@ -4519,7 +4519,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte taxReceivablesSec
+    public decimal taxReceivablesSec
     {
         get
         {
@@ -4533,7 +4533,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte taxReceivablesCom
+    public decimal taxReceivablesCom
     {
         get
         {
@@ -4575,7 +4575,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte withholdingTaxCom
+    public decimal withholdingTaxCom
     {
         get
         {
@@ -4589,7 +4589,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte withholding871m
+    public decimal withholding871m
     {
         get
         {
@@ -4603,7 +4603,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte withholding871mSec
+    public decimal withholding871mSec
     {
         get
         {
@@ -4617,7 +4617,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte withholding871mCom
+    public decimal withholding871mCom
     {
         get
         {
@@ -4631,7 +4631,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte withholdingCollectedTax
+    public decimal withholdingCollectedTax
     {
         get
         {
@@ -4645,7 +4645,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte withholdingCollectedTaxSec
+    public decimal withholdingCollectedTaxSec
     {
         get
         {
@@ -4659,7 +4659,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte withholdingCollectedTaxCom
+    public decimal withholdingCollectedTaxCom
     {
         get
         {
@@ -4673,7 +4673,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte salesTax
+    public decimal salesTax
     {
         get
         {
@@ -4687,7 +4687,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte salesTaxSec
+    public decimal salesTaxSec
     {
         get
         {
@@ -4701,7 +4701,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte salesTaxCom
+    public decimal salesTaxCom
     {
         get
         {
@@ -4715,7 +4715,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte fxTranslationGainLoss
+    public decimal fxTranslationGainLoss
     {
         get
         {
@@ -4729,7 +4729,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte fxTranslationGainLossSec
+    public decimal fxTranslationGainLossSec
     {
         get
         {
@@ -4743,7 +4743,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte fxTranslationGainLossCom
+    public decimal fxTranslationGainLossCom
     {
         get
         {
@@ -4785,7 +4785,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte otherFeesCom
+    public decimal otherFeesCom
     {
         get
         {
@@ -4799,7 +4799,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte other
+    public decimal other
     {
         get
         {
@@ -4813,7 +4813,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte otherSec
+    public decimal otherSec
     {
         get
         {
@@ -4827,7 +4827,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte otherCom
+    public decimal otherCom
     {
         get
         {
@@ -4869,7 +4869,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte endingCashCom
+    public decimal endingCashCom
     {
         get
         {
@@ -4911,7 +4911,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte endingSettledCashCom
+    public decimal endingSettledCashCom
     {
         get
         {
@@ -4928,7 +4928,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashReportCashR
 [System.SerializableAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class FlexQueryResponseFlexStatementsFlexStatementStatementOfFundsLine
+public partial class StatementOfFundsLine
 {
 
     private string accountIdField;
@@ -4961,7 +4961,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementStatementOfFund
 
     private string issuerField;
 
-    private byte multiplierField;
+    private decimal multiplierField;
 
     private string strikeField;
 
@@ -5201,7 +5201,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementStatementOfFund
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte multiplier
+    public decimal multiplier
     {
         get
         {
@@ -5400,7 +5400,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementStatementOfFund
 [System.SerializableAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInPositionValue
+public partial class ChangeInPositionValue
 {
 
     private string accountIdField;
@@ -5421,19 +5421,19 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInPositio
 
     private decimal mtmTransactionsField;
 
-    private byte corporateActionsField;
+    private decimal corporateActionsField;
 
-    private byte otherField;
+    private decimal otherField;
 
-    private byte accountTransfersField;
+    private decimal accountTransfersField;
 
-    private byte linkingAdjustmentsField;
+    private decimal linkingAdjustmentsField;
 
-    private byte fxTranslationPnlField;
+    private decimal fxTranslationPnlField;
 
-    private byte futurePriceAdjustmentsField;
+    private decimal futurePriceAdjustmentsField;
 
-    private byte settledCashField;
+    private decimal settledCashField;
 
     private decimal endOfPeriodValueField;
 
@@ -5565,7 +5565,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInPositio
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte corporateActions
+    public decimal corporateActions
     {
         get
         {
@@ -5579,7 +5579,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInPositio
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte other
+    public decimal other
     {
         get
         {
@@ -5593,7 +5593,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInPositio
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte accountTransfers
+    public decimal accountTransfers
     {
         get
         {
@@ -5607,7 +5607,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInPositio
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte linkingAdjustments
+    public decimal linkingAdjustments
     {
         get
         {
@@ -5621,7 +5621,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInPositio
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte fxTranslationPnl
+    public decimal fxTranslationPnl
     {
         get
         {
@@ -5635,7 +5635,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInPositio
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte futurePriceAdjustments
+    public decimal futurePriceAdjustments
     {
         get
         {
@@ -5649,7 +5649,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInPositio
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte settledCash
+    public decimal settledCash
     {
         get
         {
@@ -5680,7 +5680,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInPositio
 [System.SerializableAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class FlexQueryResponseFlexStatementsFlexStatementTrade
+public partial class Trade
 {
 
     private string accountIdField;
@@ -5691,7 +5691,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementTrade
 
     private string currencyField;
 
-    private byte fxRateToBaseField;
+    private decimal fxRateToBaseField;
 
     private string assetCategoryField;
 
@@ -5715,7 +5715,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementTrade
 
     private string issuerField;
 
-    private byte multiplierField;
+    private decimal multiplierField;
 
     private string strikeField;
 
@@ -5747,7 +5747,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementTrade
 
     private decimal proceedsField;
 
-    private byte taxesField;
+    private decimal taxesField;
 
     private decimal ibCommissionField;
 
@@ -5763,19 +5763,19 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementTrade
 
     private decimal costField;
 
-    private byte fifoPnlRealizedField;
+    private decimal fifoPnlRealizedField;
 
-    private byte fxPnlField;
+    private decimal fxPnlField;
 
     private decimal mtmPnlField;
 
-    private byte origTradePriceField;
+    private decimal origTradePriceField;
 
     private string origTradeDateField;
 
     private string origTradeIDField;
 
-    private byte origOrderIDField;
+    private decimal origOrderIDField;
 
     private string clearingFirmIDField;
 
@@ -5809,9 +5809,9 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementTrade
 
     private string levelOfDetailField;
 
-    private byte changeInPriceField;
+    private decimal changeInPriceField;
 
-    private byte changeInQuantityField;
+    private decimal changeInQuantityField;
 
     private string orderTypeField;
 
@@ -5877,7 +5877,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementTrade
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte fxRateToBase
+    public decimal fxRateToBase
     {
         get
         {
@@ -6045,7 +6045,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementTrade
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte multiplier
+    public decimal multiplier
     {
         get
         {
@@ -6269,7 +6269,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementTrade
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte taxes
+    public decimal taxes
     {
         get
         {
@@ -6381,7 +6381,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementTrade
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte fifoPnlRealized
+    public decimal fifoPnlRealized
     {
         get
         {
@@ -6395,7 +6395,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementTrade
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte fxPnl
+    public decimal fxPnl
     {
         get
         {
@@ -6423,7 +6423,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementTrade
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte origTradePrice
+    public decimal origTradePrice
     {
         get
         {
@@ -6465,7 +6465,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementTrade
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte origOrderID
+    public decimal origOrderID
     {
         get
         {
@@ -6703,7 +6703,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementTrade
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte changeInPrice
+    public decimal changeInPrice
     {
         get
         {
@@ -6717,7 +6717,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementTrade
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte changeInQuantity
+    public decimal changeInQuantity
     {
         get
         {
@@ -6776,7 +6776,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementTrade
 [System.SerializableAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class FlexQueryResponseFlexStatementsFlexStatementOptionEAE
+public partial class OptionEAE
 {
 
     private string accountIdField;
@@ -6787,7 +6787,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementOptionEAE
 
     private string currencyField;
 
-    private byte fxRateToBaseField;
+    private decimal fxRateToBaseField;
 
     private string assetCategoryField;
 
@@ -6811,7 +6811,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementOptionEAE
 
     private string issuerField;
 
-    private byte multiplierField;
+    private decimal multiplierField;
 
     private string strikeField;
 
@@ -6903,7 +6903,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementOptionEAE
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte fxRateToBase
+    public decimal fxRateToBase
     {
         get
         {
@@ -7071,7 +7071,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementOptionEAE
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte multiplier
+    public decimal multiplier
     {
         get
         {
@@ -7312,7 +7312,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementOptionEAE
 [System.SerializableAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class FlexQueryResponseFlexStatementsFlexStatementUnbundledCommissionDetail
+public partial class UnbundledCommissionDetail
 {
 
     private string accountIdField;
@@ -7323,7 +7323,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementUnbundledCommis
 
     private string currencyField;
 
-    private byte fxRateToBaseField;
+    private decimal fxRateToBaseField;
 
     private string assetCategoryField;
 
@@ -7347,7 +7347,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementUnbundledCommis
 
     private string issuerField;
 
-    private byte multiplierField;
+    private decimal multiplierField;
 
     private string strikeField;
 
@@ -7383,7 +7383,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementUnbundledCommis
 
     private decimal thirdPartyRegulatoryChargeField;
 
-    private byte otherField;
+    private decimal otherField;
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
@@ -7443,7 +7443,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementUnbundledCommis
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte fxRateToBase
+    public decimal fxRateToBase
     {
         get
         {
@@ -7611,7 +7611,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementUnbundledCommis
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte multiplier
+    public decimal multiplier
     {
         get
         {
@@ -7863,7 +7863,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementUnbundledCommis
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte other
+    public decimal other
     {
         get
         {
@@ -7880,7 +7880,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementUnbundledCommis
 [System.SerializableAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class FlexQueryResponseFlexStatementsFlexStatementPriorPeriodPosition
+public partial class PriorPeriodPosition
 {
 
     private string accountIdField;
@@ -7891,7 +7891,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementPriorPeriodPosi
 
     private string currencyField;
 
-    private byte fxRateToBaseField;
+    private decimal fxRateToBaseField;
 
     private string assetCategoryField;
 
@@ -7915,7 +7915,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementPriorPeriodPosi
 
     private string issuerField;
 
-    private byte multiplierField;
+    private decimal multiplierField;
 
     private string strikeField;
 
@@ -7989,7 +7989,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementPriorPeriodPosi
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte fxRateToBase
+    public decimal fxRateToBase
     {
         get
         {
@@ -8157,7 +8157,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementPriorPeriodPosi
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte multiplier
+    public decimal multiplier
     {
         get
         {
@@ -8272,7 +8272,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementPriorPeriodPosi
 [System.SerializableAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class FlexQueryResponseFlexStatementsFlexStatementCashTransaction
+public partial class CashTransaction
 {
 
     private string accountIdField;
@@ -8283,7 +8283,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashTransaction
 
     private string currencyField;
 
-    private byte fxRateToBaseField;
+    private decimal fxRateToBaseField;
 
     private string assetCategoryField;
 
@@ -8307,7 +8307,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashTransaction
 
     private string issuerField;
 
-    private byte multiplierField;
+    private decimal multiplierField;
 
     private string strikeField;
 
@@ -8391,7 +8391,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashTransaction
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte fxRateToBase
+    public decimal fxRateToBase
     {
         get
         {
@@ -8559,7 +8559,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashTransaction
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte multiplier
+    public decimal multiplier
     {
         get
         {
@@ -8744,13 +8744,13 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementCashTransaction
 [System.SerializableAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class FlexQueryResponseFlexStatementsFlexStatementInterestAccruals
+public partial class InterestAccruals
 {
 
-    private FlexQueryResponseFlexStatementsFlexStatementInterestAccrualsInterestAccrualsCurrency interestAccrualsCurrencyField;
+    private InterestAccrualsCurrency interestAccrualsCurrencyField;
 
     /// <remarks/>
-    public FlexQueryResponseFlexStatementsFlexStatementInterestAccrualsInterestAccrualsCurrency InterestAccrualsCurrency
+    public InterestAccrualsCurrency InterestAccrualsCurrency
     {
         get
         {
@@ -8767,7 +8767,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementInterestAccrual
 [System.SerializableAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class FlexQueryResponseFlexStatementsFlexStatementInterestAccrualsInterestAccrualsCurrency
+public partial class InterestAccrualsCurrency
 {
 
     private string accountIdField;
@@ -8788,9 +8788,9 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementInterestAccrual
 
     private decimal accrualReversalField;
 
-    private byte fxTranslationField;
+    private decimal fxTranslationField;
 
-    private byte endingAccrualBalanceField;
+    private decimal endingAccrualBalanceField;
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
@@ -8920,7 +8920,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementInterestAccrual
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte fxTranslation
+    public decimal fxTranslation
     {
         get
         {
@@ -8934,7 +8934,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementInterestAccrual
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte endingAccrualBalance
+    public decimal endingAccrualBalance
     {
         get
         {
@@ -8951,7 +8951,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementInterestAccrual
 [System.SerializableAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInDividendAccrual
+public partial class ChangeInDividendAccrual
 {
 
     private string accountIdField;
@@ -8962,7 +8962,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInDividen
 
     private string currencyField;
 
-    private byte fxRateToBaseField;
+    private decimal fxRateToBaseField;
 
     private string assetCategoryField;
 
@@ -8986,7 +8986,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInDividen
 
     private string issuerField;
 
-    private byte multiplierField;
+    private decimal multiplierField;
 
     private string strikeField;
 
@@ -9002,7 +9002,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInDividen
 
     private uint payDateField;
 
-    private ushort quantityField;
+    private decimal quantityField;
 
     private decimal taxField;
 
@@ -9078,7 +9078,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInDividen
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte fxRateToBase
+    public decimal fxRateToBase
     {
         get
         {
@@ -9246,7 +9246,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInDividen
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte multiplier
+    public decimal multiplier
     {
         get
         {
@@ -9358,7 +9358,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInDividen
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public ushort quantity
+    public decimal quantity
     {
         get
         {
@@ -9487,7 +9487,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementChangeInDividen
 [System.SerializableAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class FlexQueryResponseFlexStatementsFlexStatementOpenDividendAccrual
+public partial class OpenDividendAccrual
 {
 
     private string accountIdField;
@@ -9498,7 +9498,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementOpenDividendAcc
 
     private string currencyField;
 
-    private byte fxRateToBaseField;
+    private decimal fxRateToBaseField;
 
     private string assetCategoryField;
 
@@ -9522,7 +9522,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementOpenDividendAcc
 
     private string issuerField;
 
-    private byte multiplierField;
+    private decimal multiplierField;
 
     private string strikeField;
 
@@ -9536,9 +9536,9 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementOpenDividendAcc
 
     private uint payDateField;
 
-    private byte quantityField;
+    private decimal quantityField;
 
-    private byte taxField;
+    private decimal taxField;
 
     private decimal feeField;
 
@@ -9612,7 +9612,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementOpenDividendAcc
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte fxRateToBase
+    public decimal fxRateToBase
     {
         get
         {
@@ -9780,7 +9780,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementOpenDividendAcc
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte multiplier
+    public decimal multiplier
     {
         get
         {
@@ -9878,7 +9878,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementOpenDividendAcc
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte quantity
+    public decimal quantity
     {
         get
         {
@@ -9892,7 +9892,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementOpenDividendAcc
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte tax
+    public decimal tax
     {
         get
         {
@@ -10007,7 +10007,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementOpenDividendAcc
 [System.SerializableAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class FlexQueryResponseFlexStatementsFlexStatementSecurityInfo
+public partial class SecurityInfo
 {
 
     private string assetCategoryField;
@@ -10032,7 +10032,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementSecurityInfo
 
     private string issuerField;
 
-    private byte multiplierField;
+    private decimal multiplierField;
 
     private string strikeField;
 
@@ -10040,7 +10040,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementSecurityInfo
 
     private string putCallField;
 
-    private byte principalAdjustFactorField;
+    private decimal principalAdjustFactorField;
 
     private string maturityField;
 
@@ -10210,7 +10210,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementSecurityInfo
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte multiplier
+    public decimal multiplier
     {
         get
         {
@@ -10266,7 +10266,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementSecurityInfo
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte principalAdjustFactor
+    public decimal principalAdjustFactor
     {
         get
         {

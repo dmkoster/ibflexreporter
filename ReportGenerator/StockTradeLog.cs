@@ -10,10 +10,10 @@ namespace ReportGenerator
     {
         List<StockTradeItem> items;
 
-        public StockTradeLog(FlexQueryResponseFlexStatementsFlexStatementTrade[] trades)
+        public StockTradeLog(Trade[] trades)
         {
             items = new List<StockTradeItem>();
-            foreach(FlexQueryResponseFlexStatementsFlexStatementTrade trade in trades)
+            foreach(Trade trade in trades)
             {
                 if(trade.putCall == "")
                 {

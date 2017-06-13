@@ -8,8 +8,8 @@ namespace ReportGenerator
 {
     class TradeTracker
     {
-        FlexQueryResponseFlexStatementsFlexStatementTrade[] trades;
-        public TradeTracker(FlexQueryResponseFlexStatementsFlexStatementTrade[] trades)
+        Trade[] trades;
+        public TradeTracker(Trade[] trades)
         {
             this.trades = trades;
         }
@@ -17,7 +17,7 @@ namespace ReportGenerator
         public decimal getCommisionBySymbol(string symbol)
         {
             decimal commision = 0;
-            foreach(FlexQueryResponseFlexStatementsFlexStatementTrade trade in trades)
+            foreach(Trade trade in trades)
             {
                 if (trade.symbol == symbol)
                     commision += trade.ibCommission;
@@ -28,7 +28,7 @@ namespace ReportGenerator
         public decimal getCommisionByOptionSymbol(string symbol)
         {
             decimal commision = 0;
-            foreach (FlexQueryResponseFlexStatementsFlexStatementTrade trade in trades)
+            foreach (Trade trade in trades)
             {
                 if (trade.underlyingSymbol == symbol)
                     commision += trade.ibCommission;
@@ -39,7 +39,7 @@ namespace ReportGenerator
         public string[] getSymbols()
         {
             HashSet<string> symbols = new HashSet<string>();
-            foreach (FlexQueryResponseFlexStatementsFlexStatementTrade trade in trades)
+            foreach (Trade trade in trades)
             {
                 if(trade.putCall == "")
                     symbols.Add(trade.symbol);
@@ -49,7 +49,7 @@ namespace ReportGenerator
         public string[] getOptionSymbols()
         {
             HashSet<string> symbols = new HashSet<string>();
-            foreach (FlexQueryResponseFlexStatementsFlexStatementTrade trade in trades)
+            foreach (Trade trade in trades)
             {
                 symbols.Add(trade.underlyingSymbol);
             }
