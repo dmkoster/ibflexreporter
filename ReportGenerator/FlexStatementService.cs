@@ -109,11 +109,11 @@ public partial class Statement
 
     private object fIFOPerformanceSummaryInBaseField;
 
-    private FlexQueryResponseFlexStatementsFlexStatementMTMPerformanceSummaryUnderlying[] mTMPerformanceSummaryInBaseField;
+    private MTMPerformanceSummaryUnderlying[] mTMPerformanceSummaryInBaseField;
 
     private object mTDYTDPerformanceSummaryField;
 
-    private FlexQueryResponseFlexStatementsFlexStatementCashReport cashReportField;
+    private CashReport cashReportField;
 
     private object fdicInsuredDepositsByBankField;
 
@@ -240,7 +240,7 @@ public partial class Statement
 
     /// <remarks/>
     [System.Xml.Serialization.XmlArrayItemAttribute("MTMPerformanceSummaryUnderlying", IsNullable = false)]
-    public FlexQueryResponseFlexStatementsFlexStatementMTMPerformanceSummaryUnderlying[] MTMPerformanceSummaryInBase
+    public MTMPerformanceSummaryUnderlying[] MTMPerformanceSummaryInBase
     {
         get
         {
@@ -266,7 +266,7 @@ public partial class Statement
     }
 
     /// <remarks/>
-    public FlexQueryResponseFlexStatementsFlexStatementCashReport CashReport
+    public CashReport CashReport
     {
         get
         {
@@ -2729,7 +2729,7 @@ public partial class ChangeInNAV
 [System.SerializableAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class FlexQueryResponseFlexStatementsFlexStatementMTMPerformanceSummaryUnderlying
+public partial class MTMPerformanceSummaryUnderlying
 {
 
     private string accountIdField;
@@ -3217,7 +3217,7 @@ public partial class FlexQueryResponseFlexStatementsFlexStatementMTMPerformanceS
 [System.SerializableAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class FlexQueryResponseFlexStatementsFlexStatementCashReport
+public partial class CashReport
 {
 
     private CashReportCurrency cashReportCurrencyField;

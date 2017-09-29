@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ReportGenerator
 {
-    class StockTradeLog
+    class StockTradeLog : IEnumerable
     {
         List<StockTradeItem> items;
 
@@ -65,7 +66,6 @@ namespace ReportGenerator
             }
         }
 
-        
         public override string ToString()
         {
             StringBuilder builder = new StringBuilder();
@@ -74,6 +74,11 @@ namespace ReportGenerator
                 builder.AppendLine(item.ToString());
             }
             return builder.ToString();
+        }
+
+        public IEnumerator GetEnumerator()
+        {
+            return ((IEnumerable)items).GetEnumerator();
         }
     }
 }
